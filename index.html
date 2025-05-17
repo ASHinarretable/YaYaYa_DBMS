@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width ,initial-scale=1.0 ">
+<title>YaYaYa</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+
+<section class="header ">
+    <nav>
+        <a href="index.html"><img src="images/logoFinal.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()" ></i>
+            <ul>
+                <li><a href="index.html" >HOME</a></li>
+                <li><a href=" ">SERVICES</a></li>
+                <li><a href=" ">ABOUT US</a></li>
+               <li><a href=" ">CONTACT</a></li>
+                <li><a href=" logout.jsp">LOG OUT</a></li>
+            </ul>
+         </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+<div class="text-box">
+    <h1>Travel.Experience.Live</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+      <a href="plan.html" class="plan-btn">Start planning</a>
+
+</div>
+</section>
+
+<!--------Famous Destinations------->
+<section class="famous">
+    <h1>Famous Destination</h1> 
+    <div class="row"> 
+        <div class = "col">
+           <a href="BaliT.html"> <img src = "images/bali.png" align="left"></a>
+            <div class="layer">
+               <a href="BaliT.html"> <h3>Bali</h3></a>
+                
+            </div>
+            <p>Bali is unique, Bali is unmatched.
+                A magical blend of culture, people, nature, activities, weather, culinary delights, nightlife, and beautiful accommodation. Bali is rated as one of the best travel destinations in 
+                the world by countless websites, review portals, and travel magazines each year – for very good reasons.</p>
+
+        </div>
+        <div class = "col">
+           <a href="RomeT.html"> <img src = "images/rome.png" align="left"></a>
+            <div class="layer">
+               <a href="RomeT.html"> <h3>Rome</h3></a>
+            </div>
+            <p>Rome was called the “Eternal City” by the ancient Romans because they believed that no matter what happened in the rest of the world, the city of Rome would always remain standing. Exploring the 
+                surrounded by glorious monuments and colossal remains takes you back in time to the “glory that was Rome”.</p>
+        </div>
+        <div class = "col">
+           <a href="TokyoT.html"> <img src = "images/Japan.png" align="left"></a>
+            <div class="layer">
+                <a href="TokyoT.html"><h3>Tokyo</h3></a>
+            </div>
+            <p>Japan is an attractive country with various seasons from north to south, rich with tourism resources. Japan has a culture that combines both tradition and modernity. The city's history can be 
+                appreciated in districts such as Asakusa and in many excellent museums, historic temples and gardens.</p>
+        </div>
+    </div>
+
+
+</section>
+<!----------------Services---------------------->
+<section class="services">
+    <h1>Services</h1>
+     <div class="row">
+        <div class="services-col">
+            <img src="images/travel-and-tourism.png">
+            <h3>Transportation</h3>
+        </div>
+        <div class="services-col">
+            <img src="images/accomodation.png">
+            <h3>Accomodation</h3>
+        </div>
+        <div class="services-col">
+            <img src="images/planning.png">
+            <h3>Itinerary</h3>
+        </div>
+     </div>
+
+</section>
+
+<!--------Footer-------->
+
+<section class="aboutus">
+    <hr>
+    <h3>About Us</h3>
+    <h4>We love to travel the world and want you to 
+        have the trip of a lifetime!</h4>
+    <p>YaYaYa enables users to quickly and easily explore a destination’s offerings and create personalized sightseeing itineraries by utilizing local expertise and cutting-edge artificial 
+        intelligence. Drawing from a database of over 80,000 destinations YaYaYa makes trip planning easy, intuitive and enjoyable for over 25 million travelers a year.<br>
+        YaYaYa For Partners enables trip planning within any innovative travel website. YaYaYa for Partners is now available for NTOs, corporate partners, travel agencies, airlines and destination marketing organizations of all shapes and sizes.</p>
+
+</section>
+<section class="footer">
+    <h3>Contact Us</h3>
+    <div class="mail">
+        <a href="yayaya.support@gmail.com"> <h6>yayaya.support@gmail.com</h6></a>
+        <a href="+91 9885210743"><h5>+91 9885210743</h5></a>
+    </div>
+    
+    <div class="socialLinks">
+       <img src="images/gmail.png">
+        <img src="images/whatsapp.png">
+        <img src="images/facebook.png">
+        <img src="images/instagram.png">
+        <img src="images/youtube.png">
+    </div>
+    <div class="credit">
+        <p>Designed By: Vaishnavi Kori and Aishwarya Pawar </p>
+    </div>
+    <div class="copyright">
+        <p>Some images used under license from Shutterstock. &copy; 2023 YaYaYa. All rights reserved.</p>
+    </div>
+
+
+   
+</section> 
+
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
