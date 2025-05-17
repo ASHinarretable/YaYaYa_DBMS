@@ -1,0 +1,49 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+    <div class="container">
+		<form>
+			<h1>Payment Details</h1>
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" placeholder="name" required>
+
+			<label for="flight">Flight Type</label>
+            <select id="flighttype" name="flighttype">
+                <option value="----------">-----------</option>
+            </select>    
+
+			<label for="hotel">Hotel Type</label>
+            <select id="hoteltype" name="hoteltype">
+                <option value="----------">-----------</option>
+            </select>   
+
+			<label for="flightcost">Flight Cost</label>
+			<input type="text" id="flightcost" name="flightcost" placeholder="flight_cost" required>
+
+			<label for="hotelcost">Hotel Cost</label>
+			<input type="text" id="hotelcost" name="hotelcost" placeholder="hotel_cost" required>
+
+			<label for="paymenttype">Payment Type</label>
+			<select id="paymenttype" name="paymenttype">
+                <option value="----------">-----------</option>
+				<option value="creditcard">Credit Card</option>
+				<option value="debitcard">Debit Card</option>
+				<option value="paypal">UPI</option>
+			</select>
+
+			<label for="paymentid">Payment ID</label>
+			<input type="text" id="paymentid" name="paymentid" placeholder="payment ID" required>
+
+			<input type="submit" value="Pay Now">
+		</form>
+	</div>
+ 
+</body>
+</html>

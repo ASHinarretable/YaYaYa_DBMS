@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-         <title>
-              Start Planning
-         </title>
-         <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <section class="planning" id="planning">
-            <div class="container">
-                <div class="main-text">
-                    <br><br>
-                    <h1>Plan</h1>
-                    <br><br><br><br>
-                    <div class="col">
-                            <label for="departure">Select a departure: </label>
-                            <select id="departure" name="departure">
-                                <option value="--">--</option>
-                                <option value="pu">Pune</option>
-                            </select><br><br>    
-                            <label for="destination">Select a destination: </label>
+<head>
+ <title>StartPlanning</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-------------Planning-------->
+<section class="planning" id="planning">
+    <div class="container">
+        <div class="main-text">
+            <br>
+            <br>
+            <h1><span>P</span>lan</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+        
+               <div class="col">
+               <form action="#">
+                <label for="departure">Departure From: </label>
+                
+                    <select id="departure" name="departure">
+                        <option value="--">--</option>
+                        <option value="pu">Pune</option>
+                        
+                    </select><br><br>
+                
+                
+                <label for="destination">Select a destination: </label>
+                        
                             <select id="destination" name="destination">
                                 <option value="--">--</option>
                                 <option value="ba">Bali</option>
@@ -28,16 +38,38 @@
                                 <option value="ka">Kashmir</option>
                                 <option value="pa">Paris</option>
                             </select><br><br>
-                            <label for="sd">Start Date: </label>
-                            <input type="date" class="form-control" id="sd" required><br><br>
-                            <label for="ed">End Date: </label>
-                            <input type="date" class="form-control" id="ed" required><br><br>
-                            <label for="nop">No. of people:</label>
-                            <input type="number" class="form-control" id="nop" required><br><br>
-                            <a href="" class="proceed-btn">Proceed to transportation</a>
-                    </div>  
-                </div>         
+                        
+                            <label for="Start">Start Date: </label>         
+                <input type="date" class="form-control"  id="Start" required><br><br>
+                            <label for="End">End Date: </label>
+                <input type="date" class="form-control"  id="End" required><br><br>
+                            <label for="People">No. Of People: </label>
+                <input type="number" class="form-control"  id="People" required><br><br>
+               
+                <input type="submit" value="Procced to transportation and accomodation" class="submit"  required> 
+               </form>
+               <br>
+               <br>
             </div>
-        </section>
-    </body>
+        </div>
+    </div>
+
+    
+     
+</section>
+<script>
+    function checkDestination() {
+        if ( value="ba") {
+       a=Bali.html;
+      }
+      if ( value="ro") {
+       a=RomeT.html;
+      }
+      if ( value="to") {
+       a=Tokyo.html;
+      }
+    }
+  </script>
+
+</body>
 </html>

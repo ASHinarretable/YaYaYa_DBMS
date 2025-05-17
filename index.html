@@ -1,3 +1,8 @@
+<%
+   if(session.getAttribute("name")==null){
+   response.sendRedirect("login.jsp");
+   }
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -42,28 +47,28 @@
     <h1>Famous Destination</h1> 
     <div class="row"> 
         <div class = "col">
-           <a href="BaliT.html"> <img src = "images/bali.png" align="left"></a>
+           <a href="BaliT.jsp"> <img src = "images/bali.png" align="left"></a>
             <div class="layer">
-               <a href="BaliT.html"> <h3>Bali</h3></a>
+               <a href="BaliT.jsp"> <h3>Bali</h3></a>
                 
             </div>
             <p>Bali is unique, Bali is unmatched.
                 A magical blend of culture, people, nature, activities, weather, culinary delights, nightlife, and beautiful accommodation. Bali is rated as one of the best travel destinations in 
-                the world by countless websites, review portals, and travel magazines each year – for very good reasons.</p>
+                the world by countless websites, review portals, and travel magazines each year for very good reasons.</p>
 
         </div>
         <div class = "col">
-           <a href="RomeT.html"> <img src = "images/rome.png" align="left"></a>
+           <a href="RomeT.jsp"> <img src = "images/Rome.jpg" align="left"></a>
             <div class="layer">
-               <a href="RomeT.html"> <h3>Rome</h3></a>
+               <a href="RomeT.jsp"> <h3>Rome</h3></a>
             </div>
-            <p>Rome was called the “Eternal City” by the ancient Romans because they believed that no matter what happened in the rest of the world, the city of Rome would always remain standing. Exploring the 
-                surrounded by glorious monuments and colossal remains takes you back in time to the “glory that was Rome”.</p>
+            <p>Rome was called the Eternal City by the ancient Romans because they believed that no matter what happened in the rest of the world, the city of Rome would always remain standing. Exploring the 
+                surrounded by glorious monuments and colossal remains takes you back in time to the glory that was Rome.</p>
         </div>
         <div class = "col">
-           <a href="TokyoT.html"> <img src = "images/Japan.png" align="left"></a>
+           <a href="TokyoT.jsp"> <img src = "images/japan.jpg" align="left"></a>
             <div class="layer">
-                <a href="TokyoT.html"><h3>Tokyo</h3></a>
+                <a href="TokyoT.jsp"><h3>Tokyo</h3></a>
             </div>
             <p>Japan is an attractive country with various seasons from north to south, rich with tourism resources. Japan has a culture that combines both tradition and modernity. The city's history can be 
                 appreciated in districts such as Asakusa and in many excellent museums, historic temples and gardens.</p>
@@ -81,8 +86,8 @@
             <h3>Transportation</h3>
         </div>
         <div class="services-col">
-            <img src="images/accomodation.png">
-            <h3>Accomodation</h3>
+            <img src="images/accomodationF.png">
+            <h3>Accommodation</h3>
         </div>
         <div class="services-col">
             <img src="images/planning.png">
